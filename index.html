@@ -7,17 +7,19 @@
   <title>Rodar o JSONServer no Replit</title>
 </head>
 <body>
-  Entrar no Replit (https://replit.com/).
-  Clicar no botão "+ Create App".
-  Clicar na aba "Chose a Template".
-  Selecionar a opção "Node.js".
-  No campo "Title", informar o nome do projeto de vocês: PetMatch.
-  Em "Privacy", manter como "Public".
-  Clicar no botão "+ Create App".
-  Clicar no ícone "Open Files" (canto superior direito).
-  Clicar no ícone dos 3 pontinhos e clicar em "New Folder". Criar uma nova pasta com o nome "db".
-  Clicar novamente no ícone dos 3 pontinhos e clicar em "New File". Criar o arquivo db.json dentro da pasta db.
-  Colocar o JSON de vocês dentro do arquivo db.json. Exemplo:
+  Entrar no GitHub (https://github.com/).
+  Clicar no avatar de seu usuário (canto superior direito).
+  Clicar na opção "Your repositories".
+  Clicar no botão "New".
+  Definir um nome para o repositório.
+  Manter o repositório como público.
+  Clicar na opção "Add a README file".
+  Clicar no botão "Create repository".
+  Ao abrir o VC Code em nuvem:
+  Clicar no ícone "New Folder". Criar uma nova pasta com o nome "db".
+  Clicar no ícone "New File". Criar o arquivo "db.json" dentro da pasta "db".
+  Colocar o JSON de vocês dentro do arquivo "db.json". 
+  Exemplo:
   {
     "cidades": [
       {"id": 1, "cidade": "Belo Horizonte", "estado": "MG", "população": 3800000},
@@ -28,17 +30,16 @@
     ]
   }
 
-  Clicar no ícone "All tools" (4 quadradinhos na barra vertical no canto esquerdo).
-  Clicar na opção "Shell".
-  Na linha de comando do "Shell", digitar os comandos abaixo, digitando <ENTER> ao final de cada um deles:
+  Na linha de comando do terminal do VS Code, digitar os comandos abaixo, digitando <ENTER> ao final de cada um deles:
 
   npm install -g json-server --save
   npx json-server --watch db/db.json
 
-  Nesse momento, o Replit abrirá uma janela de "Preview" em que serão apresentados os "endpoints" para acesso ao seu JSON. No caso do meu exemplo, será "/cidades". Nessa janela, também será apresentado o link (verde) e o QRCode para acesso aos "endpoints".
-
-
-    petcmatch.json:
+  Nesse momento, o Codespaces apresentará os "endpoints" para acesso ao JSON. 
+  No caso do meu exemplo, será "/cidades". 
+  
+  Exemplo para o caso do projeto PetMatch:
+  petcmatch.json:
     {
       "pets": [
          {"id": 1, "nome": "pet1", ...},
