@@ -41,6 +41,9 @@ json-server --watch db/db.json --port 3333
   Manter o repositório como público.
   Clicar na opção "Add a README file".
   Clicar no botão "Create repository".
+  Clicar no botão "Code".
+  Clicar na aba "Codespaces".
+  Clicar no botão "Criate Codespace on main".
   Ao abrir o VC Code em nuvem:
   Clicar no ícone "New Folder". Criar uma nova pasta com o nome "db".
   Clicar no ícone "New File". Criar o arquivo "db.json" dentro da pasta "db".
